@@ -12,7 +12,11 @@
 <?php require_once('menu_main.php'); ?>
 <div class="container vh-100">
 <div class="row">
-  <!--- 사이드바 들어가는 자리 (skin/layout2.php) ---->
+
+
+    <!-- 2단 레이아웃 부트스트랩 비율3:9로 맞추기 위해서--------->
+
+    <!--- 사이드바 들어가는 자리 (skin/layout2.php) ---->
   <div class="col-md-3 order-md-1 mb-4">
     <?php echo $side; ?>
 

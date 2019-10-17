@@ -5,7 +5,7 @@
 
     //데이터베이스 접속 정보들.
 
-    define('DB_HOST', '192.168.0.120'); //데이터베이스 접속 아이피
+    define('DB_HOST', '192.168.0.153'); //데이터베이스 접속 아이피
     define('DB_USER', 'dbuser'); //데이터베이스 접속을 위한 아이디
     define('DB_PASS', 'root'); //데이터베이스 접속을 위한 비밀번호
     define('DB_NAME', 'bbs'); //데이터베이스 이름
@@ -30,7 +30,7 @@
     define('USER_DIR' , $root . '/user'); //user 폴더 경로
 
 
-    //요기보드 버전
+    //웹보드 버전
     define('YOGI', 'y1');
 
     //세션 시작 안했으면 세션시작

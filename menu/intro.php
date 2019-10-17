@@ -1,8 +1,11 @@
 <?php
 require_once('../_path.php');
 $current_menu = '소개' ;
-require_once(SKIN_DIR .'/layout1.php');  // 1단 레이아웃 
+require_once(SKIN_DIR .'/layout1.php');  // 1단 레이아웃 ,layout1.php 파일 불러온다
 ?>
+
+<!------    intro.php:홈페이지 소개버튼 클릭하면 보이는 파일         -------->
+
 <div class="mx-auto" style="max-width: 600px">
     <div class="text-center mb-4">
       <img src="../img/w3c.jpg">
@@ -33,5 +36,5 @@ require_once(SKIN_DIR .'/layout1.php');  // 1단 레이아웃
 
 </div>
 <?php
-require_once(SKIN_DIR .'/footer.php'); 
+require_once(SKIN_DIR .'/footer.php');  //footer.php:파일 끝부분 불러온다
 ?>

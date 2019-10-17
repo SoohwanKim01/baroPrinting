@@ -5,5 +5,5 @@
     $_SESSION = array();  // 세션 변수 클리어 
     session_destroy();    // 세션을 삭제
   }
-  echo '<script>location=" ' . ROOT_PATH . ' ";</script>';  // 루트로 이동 
+  echo '<script>location=" ' . ROOT_PATH.'index.php' .  ' ";</script>';  // 루트로 이동
 ?>
