@@ -15,6 +15,10 @@
       <li class="nav-item <?php if($current_menu =='게시판') {echo ' active';}?>">
         <a class="nav-link" href="<?php echo MENU_PATH.'/notice.php';?>">게시판</a>
       </li>
+
+        <li class="nav-item <?php if($current_menu =='위치') {echo ' active';}?>">
+            <a class="nav-link" href="<?php echo ROOT_PATH.'google.html';?>">위치</a>
+        </li>
     </ul>
             <ul class="navbar-nav ml-md-auto">
                 <!-- 상단 우측 로그인 링크 출력 -->
