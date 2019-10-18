@@ -17,5 +17,7 @@
 
 
 
+
+
     <!--- 본문 들어가는 자리 (skin/layout1.php) ---->
   <div class="col">

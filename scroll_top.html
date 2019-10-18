@@ -1,0 +1,17 @@
+<!DOCTYPE>
+<html>
+<head><title> 스크롤 이동 </title></head>
+<body>
+<div style="height:500px;">영역1</div>
+<div style="height:500px;">영역2</div>
+<div style="height:500px;">영역3</div>
+<div style="height:500px;">영역4</div>
+<div class="moveTop">TOP</div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript"> $(document).ready(function () {
+    var speed = 500;
+    // 스크롤속도
+$(".moveTop").css("cursor", "pointer").click(function() { $('body, html').animate({scrollTop:0}, speed); }); }); </script>
+</body>
+</html>
+
