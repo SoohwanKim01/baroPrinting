@@ -22,7 +22,16 @@
           $_SESSION['uid'] = $row['uid'];
           $_SESSION['uname'] = $row['uname'];
           $_SESSION['level'] = $row['level'];
+
+
+
+
           echo '<script>location=" ' . ROOT_PATH.'index.php' . ' ";</script>';
+
+
+
+
+
         }
         else {
           // 넘어온 아이디/비번이 틀리면 
