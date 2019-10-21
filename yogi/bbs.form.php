@@ -9,9 +9,16 @@
           <?php if(substr($mode,0,4)=='edit') {echo "value='$subject'";} ?> autocomplete=off autofocus required>
 		</div>
  	  </div>
+
+
+
 		<label for="content" class="sr-only">내 용:</label>
         <textarea name="content" class="form-control" rows="10"><?php if(substr($mode,0,4)=='edit') {echo $content;} ?>
         </textarea>
+
+
+
+
 	  <div class="text-center mt-3">
 		<input type="submit" name="submit" value="저 장" />
     <?php if(substr($mode,0,4)=='edit') {
