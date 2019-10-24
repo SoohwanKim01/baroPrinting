@@ -59,4 +59,4 @@ if (isset($_POST['submit2'])) {
 //==== 처음 들어 올 때는 비밀번호 검사창 출력 
 } else {
     require_once(SKIN_DIR .'/user_pw_check.php') ; // Password 검사 입력폼
-}
+}?>

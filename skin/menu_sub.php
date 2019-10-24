@@ -19,7 +19,7 @@ $side = <<<EOL
 		<div class="list-group">
 		  <div class="list-group-item text-center text-white bg-secondary">게 시 판</div>
 		  <a href="$sub1" class="list-group-item list-group-item-action">공지사항</a>
-		  <a href="$sub2" class="list-group-item list-group-item-action">자유게시판</a>
+		  <a href="$sub2" class="list-group-item list-group-item-action">간편주문</a>
 		</div>
 EOL;
 break;

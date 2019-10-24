@@ -19,6 +19,10 @@
         <li class="nav-item <?php if($current_menu =='위치') {echo ' active';}?>">
             <a class="nav-link" href="<?php echo ROOT_PATH.'google.html';?>">위치</a>
         </li>
+
+        <li class="nav-item <?php if($current_menu =='문의하기') {echo ' active';}?>">
+            <a class="nav-link" href="<?php echo ROOT_PATH.'question.html';?>">문의하기</a>
+        </li>
     </ul>
             <ul class="navbar-nav ml-md-auto">
                 <!-- 상단 우측 로그인 링크 출력 -->

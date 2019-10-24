@@ -1,6 +1,6 @@
 <?php
 // 설정
-$uploads_dir = './img';  //img 폴더에 업로드 된다
+$uploads_dir = './';  //img 폴더에 업로드 된다
 
 $allowed_ext = array('jpg','jpeg','png','gif'); //확장자가 jpg,jpeg,png,gif 만 가능하다
 

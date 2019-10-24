@@ -21,6 +21,8 @@ $result = mysqli_query($dbc, $query) or die('DB 조회수 변경에러');
 mysqli_close($dbc);
 ?>
 
+
+
 <a href="<?php echo $_SERVER['PHP_SELF'].'?mode=edit&bno='.$bno ; ?>"><button>수정</button></a>  
 <a href="<?php echo $_SERVER['PHP_SELF']?>"><button>목록으로</button></a>  
 <a href="<?php echo $_SERVER['PHP_SELF'].'?mode=delete&bno='.$bno ; ?>" onclick="return confirm('삭제하시겠습니까?')"><button>삭제</button></a>
