@@ -5,7 +5,7 @@
     <input type="text" name="uid" class="form-control" placeholder="아이디" value="<?php if (!empty($uid)) echo $uid; ?>"
            required autofocus>
     <input type="password" name="pass" class="form-control" placeholder="비밀번호" required>
-    <input type="checkbox" name="auto_login" value="2">자동로그인
+
     <button class="btn btn-lg btn-primary btn-block mt-4" type="submit" name="submit">로 그 인</button>
 </form>
 <!---- 로그인 스킨 끝(skin/user_login.php) -------->

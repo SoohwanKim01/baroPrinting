@@ -1,9 +1,16 @@
-<!DOCTYPE html>
+<?php
+include_once('./_path.php'); //path.php 파일을 불러온다
+$current_menu = '바로인쇄' ;
+require_once(SKIN_DIR .'/layout1.php');  // 1단 레이아웃 layout1.php 파일을 불러온다
+?>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 </head>
 <body>
+
+
+<!--문의하기를 클릭했을 때 닉네임과 문의내용 입력폼-->
 <fieldset>
 
     <legend>
@@ -42,3 +49,6 @@
 </body>
 
 </html>
+<?php
+require_once(SKIN_DIR . '/footer.php');  // footer.php 를 불러온다
+?>

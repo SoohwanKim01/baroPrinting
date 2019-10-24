@@ -53,6 +53,9 @@ require_once(SKIN_DIR .'/layout1.php');  // 1단 레이아웃 ,layout1.php 파�
     </body>
     </html>
 
+<?php
+require_once('../google.html');  //google.html:구글 지도를 불러온다
+?>
 
 <?php
 require_once(SKIN_DIR .'/footer.php');  //footer.php:파일 끝부분 불러온다

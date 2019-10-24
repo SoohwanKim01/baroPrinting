@@ -8,7 +8,7 @@
 define('DB_HOST', '192.168.0.153'); //데이터베이스 접속 아이피
 define('DB_USER', 'dbuser'); //데이터베이스 접속을 위한 아이디
 define('DB_PASS', 'root'); //데이터베이스 접속을 위한 비밀번호
-define('DB_NAME', 'bbs'); //데이터베이스 이름
+define('DB_NAME', 'bbs'); //데이터베이스 이름bbs:Bulletin Board System 전자게시판
 
 
 //html에서 사용하는 링크폴더 들의 위치
@@ -18,6 +18,7 @@ define('CSS_PATH', '/css'); //css폴더 경로
 define('SKIN_PATH', '/skin'); //skin폴더 경로
 define('USER_PATH', '/user'); //user폴더 경로
 define('MENU_PATH', '/menu'); //menu폴더 경로
+define('STUDY_PATH', '/study'); //menu폴더 경로
 
 
 //require,include에 사용하는 절대경로

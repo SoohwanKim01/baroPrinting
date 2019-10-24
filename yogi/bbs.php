@@ -9,11 +9,11 @@ if (!isset($_GET['mode'])) {
     case 'view' ; require(YOGI_DIR . '/bbs.view.php'); break; //조회를 하면 bbs.view 로
     case 'delete' ; //삭제를 하면 
         $bno = $_GET['bno'];
-        $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME) or die('DB 접속에러! - bbs.php');
-        $query = "DELETE FROM yg_bbs WHERE bno = $bno LIMIT 1" ;
+        $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME) or die('DB 접속에러! - bbs.php');//DB연결
+        $query = "DELETE FROM yg_bbs WHERE bno = $bno LIMIT 1" ; // 자료삭제
         mysqli_query($dbc, $query) or die('자료삭제 실패!'); 
         echo $_SERVER['PHP_SELF'] ;
-        echo("<script>alert('삭제 되었습니다.');</script>");
+        //echo("<script>alert('삭제 되었습니다.');</script>");
         echo('<script>location=" '. $_SERVER['PHP_SELF'] .' ";</script>');
         break ;
     }

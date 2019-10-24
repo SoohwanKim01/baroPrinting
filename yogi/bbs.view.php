@@ -11,8 +11,10 @@ mysqli_query($dbc, "SET NAMES UTF8");
 $query = "SELECT * FROM yg_bbs WHERE bno=" . $bno ;
 $result = mysqli_query($dbc, $query) or die('DB 쿼리에러');
 $row = mysqli_fetch_array($result) ;
+
 echo '<h3>' . $row['subject'] . '</h3><br>'; // 제목출력
-echo nl2br($row['content']) . '<br><br>' ;  // 내용출력 
+
+echo nl2br($row['content']) . '<br><br>' ;  // 내용출력
 
 // 조회수를 1 증가 시킨다
 $hit = $row['hit'] + 1 ;
