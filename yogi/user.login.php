@@ -23,14 +23,7 @@
           $_SESSION['uname'] = $row['uname'];
           $_SESSION['level'] = $row['level'];
 
-
-
-
           echo '<script>location=" ' . ROOT_PATH.'index.php' . ' ";</script>';
-
-
-
-
 
         }
         else {

@@ -19,7 +19,7 @@ $side = <<<EOL
 		<div class="list-group">
 		  <div class="list-group-item text-center text-white bg-secondary">게 시 판</div>
 		  <a href="$sub1" class="list-group-item list-group-item-action">공지사항</a>
-		  <a href="$sub2" class="list-group-item list-group-item-action">자유게시판</a>
+		  <a href="$sub2" class="list-group-item list-group-item-action">간편주문</a>
 		</div>
 EOL;
 break;
@@ -55,14 +55,17 @@ $side = <<<EOL
 
 EOL;
 break;
-//**** 관리자 메뉴 ****************************************************
+
+//관리자 메뉴
 case '관리자' ;
-$sub1 = USER_PATH . '/admin.php';
+$sub1 = USER_PATH . '/user_check.php';
+$sub2 = USER_PATH . '/adminquestion.php';
 $side = <<<EOL
 <!---- 사이드메뉴 (skin/menu_sub.php) -------->
 		<div class="list-group">
 		  <div class="list-group-item text-center text-white bg-secondary">관리자메뉴</div>
 		  <a href="$sub1" class="list-group-item list-group-item-action">가입회원정보</a>
+		  <a href="$sub2" class="list-group-item list-group-item-action">문의내용</a>
 		</div>
 
 EOL;

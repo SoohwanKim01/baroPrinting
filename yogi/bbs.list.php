@@ -2,6 +2,7 @@
 <div class="text-right mb-2"><!-- [추가]버튼 -->
     <a class="btn btn-sm btn-primary" href="<?php echo $_SERVER['PHP_SELF'];?>?mode=add">추가</a>
 </div>
+
 <table class="table table-sm border-bottom text-center">
   <thead class="thead-light">
   <tr><th>번호</th><th>날짜</th><th>제 목</th><th>글쓴이</th><th>조회수</th></tr>

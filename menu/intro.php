@@ -20,11 +20,7 @@ require_once(SKIN_DIR .'/layout1.php');  // 1단 레이아웃 ,layout1.php 파�
 
     <h1><a href='intro.php'>바로인쇄 소개</a></h1>
 
-
-    <!--    <input id="night_day" type="button" value="night" onclick="
-    nightDayHandler(this);
-  ">-->
-
+    <!-- fetchPage로 이름명에 맞는 파일들을 연결해서 리스트로 나열한다 -->
 
     <ol>
         <li><a href="#!useintro.html" onclick= "fetchPage('useintro.html')">출력예약 및 주문하기</a></li>
@@ -32,8 +28,10 @@ require_once(SKIN_DIR .'/layout1.php');  // 1단 레이아웃 ,layout1.php 파�
         <li><a href="#!bank.html" onclick= "fetchPage('bank.html')">현금결제 안내</a></li>
     </ol>
 
-    <article></article>
+    <article></article> <!-- 텍스트가 들어갈 공간 -->
     <script>
+
+        // then:응답을 다받았다면 그다음 행동으로 article 공간에 맞는 파일들을 글자로 넣어준다
      function fetchPage(name){
         fetch(name).then(function(response){
             response.text().then(function(text){
@@ -42,6 +40,7 @@ require_once(SKIN_DIR .'/layout1.php');  // 1단 레이아웃 ,layout1.php 파�
         });
      }
 
+     //#!앞에 기호들을 제거한다
      if(location.hash){
 
          fetchPage(location.hash.substr(2));
@@ -54,6 +53,9 @@ require_once(SKIN_DIR .'/layout1.php');  // 1단 레이아웃 ,layout1.php 파�
     </body>
     </html>
 
+<?php
+require_once('../google.html');  //google.html:구글 지도를 불러온다
+?>
 
 <?php
 require_once(SKIN_DIR .'/footer.php');  //footer.php:파일 끝부분 불러온다
