@@ -22,6 +22,14 @@
         <li class="nav-item <?php if($current_menu =='문의하기') {echo ' active';}?>">
             <a class="nav-link" href="<?php echo ROOT_PATH.'question.html';?>">문의하기</a>
         </li>
+
+        <li class="nav-item <?php if($current_menu =='포트폴리오') {echo ' active';}?>">
+            <a class="nav-link" href="<?php echo MENU_PATH.'/portfolio.php';?>">포트폴리오</a>
+        </li>
+        <li class="nav-item <?php if($current_menu =='채팅하기') {echo ' active';}?>">
+            <a class="nav-link" href="<?php echo MENU_PATH.'/chatting.php';?>">채팅하기</a>
+        </li>
+
     </ul>
             <ul class="navbar-nav ml-md-auto">
                 <!-- 상단 우측 로그인 링크 출력 -->

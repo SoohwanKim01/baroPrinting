@@ -58,7 +58,7 @@ break;
 
 //관리자 메뉴
 case '관리자' ;
-$sub1 = USER_PATH . '/user_check.php';
+$sub1 = USER_PATH . '/admin.php';
 $sub2 = USER_PATH . '/adminquestion.php';
 $side = <<<EOL
 <!---- 사이드메뉴 (skin/menu_sub.php) -------->
