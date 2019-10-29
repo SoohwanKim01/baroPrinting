@@ -30,6 +30,10 @@
             <a class="nav-link" href="<?php echo MENU_PATH.'/chatting.php';?>">채팅하기</a>
         </li>
 
+        <li class="nav-item <?php if($current_menu =='블로그') {echo ' active';}?>">
+            <a class="nav-link" href="<?php echo MENU_PATH.'/blog.php';?>">블로그</a>
+        </li>
+
     </ul>
             <ul class="navbar-nav ml-md-auto">
                 <!-- 상단 우측 로그인 링크 출력 -->
