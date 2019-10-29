@@ -37,31 +37,7 @@ if (!isset($_SESSION['uno'])) {
     exit();
 }
 
-//==== 사용자정보 변경에서 [확인] 눌렀으면 (skin/user_edit.php의 Form 에서 왔으면..)
-if (isset($_POST['submit2'])) {
-    $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-
-    $uid   = mysqli_real_escape_string($dbc, trim($_POST['uid']));
-    $uname = mysqli_real_escape_string($dbc, trim($_POST['uname']));
-    $email = mysqli_real_escape_string($dbc, trim($_POST['email']));
-
-    // 변경된 사용자정보 저장
-    if (!empty($uname)) {
-        $query = "UPDATE yg_user SET uname = '$uname', email = '$email' WHERE uno =" .$_SESSION['uno'];
-        mysqli_query($dbc, $query) or die('사용자정보 변경실패 - user.edit-19');
-        echo '<p>변경되었습니다.</p>';
-        mysqli_close($dbc);
-        $_SESSION['uname'] = $uname; // 세션,쿠키의 사용자명도 변경
-        setcookie('uname', $row['uname'], time() + (60 * 60 * 24 * 1));
-        exit();
-    } else {
-        echo '<p class="error">회원명 을 입력하세요.</p>';
-        mysqli_close($dbc);
-        require_once(SKIN_DIR . '/admin_user.php') ; // 사용자 정보변경 form 출력
-        exit();
-    }
-//==== 비밀번호 검사 통과하면 (skin/user_pw_check.php의 Form 에서 왔으면..)
-} elseif (isset($_POST['submit1'])){
+elseif (isset($_POST['submit1'])){
     $pass  = $_POST['pass'] ;
     $uno   = $_SESSION['uno'] ;
     $dbc   = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);

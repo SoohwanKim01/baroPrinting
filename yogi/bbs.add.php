@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) { //설정확인
             $uno = 0;
             $uname = '손님';
         }
-        $query = "INSERT INTO yg_bbs (catno, datetime, subject, content, uno, writer) //자료추가 
+        $query = "INSERT INTO yg_bbs (catno, datetime, subject, content, uno, writer) 
                 VALUES ($catno, now(), '$subject', '$content', $uno, '$uname')";
         mysqli_query($dbc, $query) or die ('자료추가 실패!');
         mysqli_close($dbc);

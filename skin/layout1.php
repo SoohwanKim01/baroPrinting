@@ -12,7 +12,7 @@
 
 <!------------ 1단 레이아웃 시작 (skin/layout1.php) --------------->
 <?php require_once('menu_main.php'); ?>  <!--menu_main.php파일을 다시 불러온다  -->
-<div class="container vh-100">
+<div class="container vh-500">
 <div class="row">
 
 
