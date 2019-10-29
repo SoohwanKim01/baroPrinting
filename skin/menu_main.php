@@ -3,7 +3,7 @@
 
 <!-- skin/menu_main.php 시작 -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark px-3">
-  <a class="navbar-brand" href="<?php echo ROOT_PATH.'index.php' ;?>">바로인쇄</a>
+  <a class="navbar-brand" href="<?php echo ROOT_PATH.'index.html' ;?>">바로인쇄</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" data-target="#navbars" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -34,6 +34,10 @@
             <a class="nav-link" href="<?php echo MENU_PATH.'/blog.php';?>">블로그</a>
         </li>
 
+        <li class="nav-item <?php if($current_menu =='질문하기') {echo ' active';}?>">
+            <a class="nav-link" href="<?php echo MENU_PATH.'/qna.php';?>">질문하기</a>
+        </li>
+
     </ul>
             <ul class="navbar-nav ml-md-auto">
                 <!-- 상단 우측 로그인 링크 출력 -->
@@ -44,13 +48,13 @@
 
 //                    관리자인 경우
                     if ($_SESSION['level']==2) {
-                        echo '<li class="nav-item"><a class="nav-link" href="' .USER_PATH. '/admin.php">관리자</a></li>' ;
+                        echo '<li class="nav-item"><a class="nav-link" href="' .ADMIN_PATH. '/users.adm.php">관리자</a></li>' ;
                         echo '<li class="nav-item"><a class="nav-link" href="' .USER_PATH. '/logout.php">로그아웃</a></li>' ;
                     }
 
 //                    회원인 경우
                     else {
-                        echo '<li class="nav-item"><a class="nav-link" href="' .USER_PATH. '/index.php">정보변경</a></li>' ;
+                        echo '<li class="nav-item"><a class="nav-link" href="' .USER_PATH. '/reset.php">정보변경</a></li>' ;
                         echo '<li class="nav-item"><a class="nav-link" href="' .USER_PATH. '/logout.php">로그아웃</a></li>' ;
                     }
                 }

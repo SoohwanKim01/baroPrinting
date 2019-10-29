@@ -12,26 +12,27 @@ define('DB_NAME', 'bbs'); //데이터베이스 이름bbs:Bulletin Board System �
 
 
 //html에서 사용하는 링크폴더 들의 위치
-
 define('ROOT_PATH', '/');  //루트 경로
 define('CSS_PATH', '/css'); //css폴더 경로
 define('SKIN_PATH', '/skin'); //skin폴더 경로
 define('USER_PATH', '/user'); //user폴더 경로
 define('MENU_PATH', '/menu'); //menu폴더 경로
 define('STUDY_PATH', '/study'); //study폴더 경로
-define('SIMPLE_PATH', '/simple'); //simple폴더 경로
+
+define('JS_PATH', '/js');//js폴더 경로
+define('EDITOR_PATH', '/summer'); //summer폴더 경로
+define('ADMIN_PATH' , '/admin'); //admin폴더 경로
 
 
 //require,include에 사용하는 절대경로
-
 $root = $_SERVER['DOCUMENT_ROOT']; //전역변수 $
 define('ROOT_DIR', $root); //루트 디렉토리 경로
 define('YOGI_DIR', $root . '/yogi'); //yogi 폴더 경로
 define('SKIN_DIR', $root . '/skin'); //skin 폴더 경로
 define('USER_DIR', $root . '/user'); //user 폴더 경로
 define('UPLOAD_DIR', $root . '/img'); //upload 폴더 경로
-define('SIMPLE_DIR', $root . '/simple'); //simple폴더 경로
 
+define('ADMIN_DIR' , $root . '/admin');//admin폴더 경로
 
 //웹보드 버전
 define('YOGI', 'y1');
