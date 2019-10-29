@@ -1,13 +1,14 @@
 <?php
 require_once('../_path.php');
 $current_menu = '블로그';
-require_once(SKIN_DIR . '/layout1.php');  // 1단 레이아웃 ,layout1.php 파일 불러온다
+require_once(SKIN_DIR . '/main_layout.php');  // 1단 레이아웃 ,main_layout.php 파일 불러온다
 ini_set("allow_url_fopen", 1);
-include_once(SIMPLE_DIR . '/simple_html_dom.php');
+include_once('simple_html_dom.php');
 
-$data = file_get_html("http://printallday.com/blog/?v=38dd815e66db");
+$data = file_get_html("http://www.kipes.com/kr/board/board_list.asp?board_name=kipT&board_skin=bbs");
 
-$a = $data->find("ul");
+$a = $data->find("table");
+
 echo $a;
 foreach ($a as $b){
     echo $b;

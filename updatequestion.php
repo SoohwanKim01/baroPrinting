@@ -1,7 +1,7 @@
 <?php
 include_once('./_path.php'); //path.php 파일을 불러온다
 $current_menu = '바로인쇄';
-require_once(SKIN_DIR . '/layout1.php');  // 1단 레이아웃 layout1.php 파일을 불러온다
+require_once(SKIN_DIR . '/main_layout.php');  // 1단 레이아웃 main_layout.php 파일을 불러온다
 ?>
     <html>
     <head>
@@ -32,7 +32,7 @@ require_once(SKIN_DIR . '/layout1.php');  // 1단 레이아웃 layout1.php 파�
 
 
     <!--완료를 누르면 홈화면으로이동-->
-    <form action="./index.php" method="POST">
+    <form action="index.html" method="POST">
         <input type="submit" value="완료"/>
 
     </form>

@@ -1,10 +1,20 @@
 body {
   background-color: #eee;
+  font-family: "맑은 고딕", 굴림, 바탕, "Segoe UI", Arial ;
   font-size: 16px ;
   line-height: 1.6 ;
 }
-
 .container {
-  padding-top: 70px;
+  min-height: 700px;
+  padding-top: 75px; 
+  padding-bottom: 30px;
   background-color: #fff;
+}
+.bbslink a:link { color: black; text-decoration: none;} /* 게시판 제목 글자색 */
+.bbslink a:visited { color: silver; text-decoration: none;} /* 게시판 제목 방문 글자색 */
+
+.bbs_view {  /* 게시글 내용보기 */
+  min-height: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
 }
